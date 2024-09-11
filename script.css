@@ -1,0 +1,148 @@
+#border {
+  display: flex;
+  width: 100vw;
+  justify-content: center; /* Horizontally center */
+
+}
+#wavy-border{
+  margin-top: 70px;
+  width: 100vw;
+  height: 200px;
+}
+#border2 {
+  margin-top: 10px;
+  width: 100vw;
+  height: 20px;
+  background-color: rgb(136, 82, 145);
+  display: flex;
+  justify-content: center; /* Horizontally center */
+}
+#center {
+    width: 60vw;
+    height: 20vw;
+    margin-top: 2vw;
+    margin-left: 19vw;
+    margin-right: 19vw;
+    background-color: #ffffff;
+    border:solid 2px rgb(109, 0, 128);
+    justify-content: center; /* Horizontally center */
+
+}
+#center2 {
+  width: 60vw;
+  height: 20vw;
+  float: center;
+  margin-top: 2vw;
+  margin-left: 20vw;
+  margin-right: 19vw;
+  justify-content: center; /* Horizontally center */
+
+}
+
+.text{ 
+    margin-left: -200px;
+}
+.content {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 100px;
+}
+
+body {
+  margin: 0; /* Remove default margin */
+  background: linear-gradient(-4deg, transparent 60%, rgb(225, 201, 237) 40%);
+  background-size: 100vw 100vh; /* Ensure full screen coverage */
+  background-repeat: no-repeat;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Prevent both horizontal and vertical scrolling */
+}
+#wavy-border {
+    width: 100vw;
+    height: 11vw;
+    margin-top: 9vw;
+}
+img{
+    margin-left: 30px;
+    margin-right:10px;
+    width: 350px;
+    height: 350px;
+    border:solid 8px rgb(69, 31, 123);
+    padding: 6px;
+}
+
+
+button {
+  font-weight: bold;
+  font-size: 1vw; /* Responsive font size */
+  display: inline-block;
+  background-color: white;
+  color: rgb(136, 82, 145);
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  text-decoration: none;
+  border: 2px solid rgb(136, 82, 145); /* Add border to define shape */
+  border-radius: 50px; /* Create oval shape */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  line-height: 1; /* Ensure button text is centered vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+button:hover {
+  background-color: rgb(224, 200, 237); 
+}
+
+
+
+  /* General styling for project cards */
+/* General styling for project cards */
+.project-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 30px; /* Add space between the project cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 30px; /* Adjust the top margin */
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Fixed width for each card */
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+/* Hover effect */
+.project-card:hover {
+  background-color: #e7e7e7; /* Gray background on hover */
+}
+
+.project-card a {
+  color: #5B5F97; /* Default link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.project-card:hover a {
+  color: #00b894; /* Green color for the link on hover */
+}
+
+
+/* Customizing the scrollbar */
+::-webkit-scrollbar {
+  width: 16px; /* Width of the vertical scrollbar */
+  height: 16px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #eab8eb; /* Light purple background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(99, 67, 99); /* Medium purple for the thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+

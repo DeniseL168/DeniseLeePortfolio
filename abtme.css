@@ -1,0 +1,144 @@
+/* General container settings */
+body {
+    margin: 0; /* Remove default margin */
+    background: linear-gradient(-4deg, transparent 60%, rgb(225, 201, 237) 40%);
+    background-size: 100vw 100vh; /* Ensure full screen coverage */
+    background-repeat: no-repeat;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Prevent both horizontal and vertical scrolling */
+}
+
+/* Navigation bar */
+#border {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    width: 100vw;
+    position: fixed; /* Fix the position */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    padding: 10px 0; /* Add some padding for better layout */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Container for image and text */
+.image-text-container {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center-align vertically */
+    width: 90vw;
+    margin-left: 7vw; /* Space between image and text */
+    margin-top: 4vw; /* Adjust spacing from the top */
+}
+
+/* Image styling */
+/* Image styling */
+img[src="DeniseLee.png"] {
+    width: 23vw; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5vw;
+    border-radius: 15px; /* Round corners with a radius of 15px */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+/* Header (h1) styles */
+h1 {
+    display: flex;
+    margin-bottom: -20px;
+    width: 70vw;
+    font-size: 150px;
+    color: rgb(68, 66, 68);
+    overflow: hidden; /* Prevent overflow */
+    margin-top: 7vw; /* Keep it at the top */
+    margin-left: 7vw;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1vw; /* Responsive font size for paragraphs */
+    color: rgb(57, 54, 57);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Button styles */
+button {
+    font-weight: bold;
+    font-size: 1vw; /* Responsive font size */
+    display: inline-block;
+    background-color: white;
+    color: rgb(136, 82, 145);
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    text-decoration: none;
+    border: 2px solid rgb(136, 82, 145); /* Add border to define shape */
+    border-radius: 50px; /* Create oval shape */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    line-height: 1; /* Ensure button text is centered vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+button:hover {
+    background-color: rgb(224, 200, 237); /* Change background color on hover */
+    color: rgb(136, 82, 145); /* Maintain text color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow effect on hover */
+}
+
+img[src="waves.webp"] {
+    margin-top: -1vw;
+}
+
+/* Ensure no vertical overflow */
+html, body {
+    background-color: white;
+    height: 100vh; /* Ensure the height is constrained to the viewport */
+    overflow: hidden; /* Disable vertical scrolling */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center; /* Center-align the content */
+    }
+
+    img[src="Untitled304_20240908211047.png"] {
+        width: 50%; /* Full width image on small screens */
+        margin: 0 450px 50px 0; /* Add margin for spacing */
+    }
+
+    .competitions-container {
+        width: 50%; /* Adjust competition container width */
+    }
+
+    p {
+        width: 50vw; /* Full width text on small screens */
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 6vw; /* Smaller heading */
+    }
+
+    h2 {
+        font-size: 3vw; /* Smaller subtitle */
+    }
+
+    p {
+        font-size: 2vw; /* Adjust paragraph font size */
+    }
+}
+
+/* Responsive adjustments for large screens */
+@media (min-width: 1440px) {
+    #center {
+        max-width: 1200px; /* Limit max-width for readability */
+    }
+
+    h1 {
+        font-size: 100px; /* Adjust font size for large screens */
+    }
+
+    h2 {
+        font-size: 50px; /* Adjust subtitle font size */
+    }
+}

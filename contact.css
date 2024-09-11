@@ -1,0 +1,278 @@
+/* Apply box-sizing to avoid overflow issues */
+* {
+    box-sizing: border-box;
+}
+
+/* General container settings */
+body {
+    margin: 0; /* Remove default margin */
+    background: linear-gradient(-4deg, transparent 60%, rgb(225, 201, 237) 40%);
+    background-size: 100vw 100vh; /* Ensure full screen coverage */
+    background-repeat: no-repeat;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navigation bar */
+#border {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    width: 100vw;
+    position: fixed; /* Fix the position */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    padding: 10px 0; /* Add some padding for better layout */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Styles for the competitions container */
+.competitions-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+    width: 30vw;
+    flex: 1; /* Allow flexibility in size */
+}
+
+/* Wrapper for the two competition containers */
+.competitions-wrapper {
+    display: flex;
+    gap: 20px; /* Space between the containers */
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%; /* Full width of the parent container */
+    margin: 0 auto; /* Center the wrapper */
+}
+
+.competitions-header {
+    display: flex;
+    align-items: center; /* Ensure vertical alignment */
+    margin-bottom: 15px;
+}
+
+.trophy-icon {
+    width: 9%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the trophy and the title */
+}
+
+.competition-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.competition-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    filter: drop-shadow(1px 2px 3px rgba(0,0,0,0.5));
+}
+/* Wrapper for the two competition containers */
+
+
+.competition-title, .competition-detail {
+    margin: 0;
+    color: #333;
+}
+
+.competition-title {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.competition-detail {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Content container */
+#center {
+    max-width: 1000px; /* Set max width */
+    width: 90%; /* Ensure it adapts to smaller screens */
+    padding: 15px;
+    margin: 0 auto; /* Center container */
+    display: flex;
+    flex-direction: column; /* Stack content vertically on smaller screens */
+}
+
+/* Text alignment */
+.text { 
+    margin-right: 3vw;
+}
+
+/* Content flexbox alignment for side-by-side layout */
+.content {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space out the image and text */
+    margin-top: 80px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Image styling */
+img {
+    width: 24vw; /* Make image take 35% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some space between the image and text */
+    border-radius: 15px; /* Adjust the value for more or less curvature */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Specific icon styling */
+img[src="discordicon.png"],
+img[src="youtubeicon.png"],
+img[src="mailicon.png"] {
+    max-width: 6%; /* Resize the specific icons */
+}
+img[src="spotifyicon.png"], img[src="instagramicon.png"]{
+    max-width: 4.5%; /* Resize the specific icons */
+}
+
+/* Hover effect for icons */
+img[src="discordicon.png"]:hover {
+    transform: scale(1.2); /* Increase size */
+    content: url('discordicon-hover.png'); /* Change icon on hover */
+}
+
+img[src="instagramicon.png"]:hover {
+    transform: scale(1.2); /* Increase size */
+    content: url('instagramicon-hover.png'); /* Change icon on hover */
+}
+
+img[src="youtubeicon.png"]:hover {
+    transform: scale(1.2); /* Increase size */
+    content: url('youtubeicon-hover.png'); /* Change icon on hover */
+}
+
+img[src="spotifyicon.png"]:hover {
+    transform: scale(1.2); /* Increase size */
+    content: url('spotifyicon-hover.png'); /* Change icon on hover */
+}
+
+img[src="mailicon.png"]:hover {
+    transform: scale(1.2); /* Increase size */
+    content: url('mailicon-hover.png'); /* Change icon on hover */
+}
+
+img[src="open.png"] {
+    max-width: 16%;
+}/* Header styles */
+h1 {
+    font-size: 1vw;
+    color: rgb(57, 54, 57);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    margin-top: 4vw;
+    margin-bottom: 7vw;
+
+
+    /* Rotate the h1 */
+   
+}
+
+
+h2 {
+    font-size: 1.5vw; /* Smaller subtitle */
+    color: rgb(57, 54, 57);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Styling for buttons */
+button {
+    font-weight: bold;
+    font-size: 1vw; /* Responsive font size */
+    display: inline-block;
+    background-color: white;
+    color: rgb(136, 82, 145);
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    text-decoration: none;
+    border: 2px solid rgb(136, 82, 145); /* Add border to define shape */
+    border-radius: 50px; /* Create oval shape */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    line-height: 1; /* Ensure button text is centered vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: rgb(224, 200, 237); /* Change background color on hover */
+    color: rgb(136, 82, 145); /* Maintain text color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow effect on hover */
+}
+
+#wavy-border {
+    width: 100vw;
+    height: 11vw;
+    margin-top: 7vw;
+}
+
+/* Ensure wavy border is positioned correctly */
+#container {
+    margin-bottom: 0;
+}
+
+/* Bottom border styling */
+#border2 {
+    margin-top: 10px;
+    width: 100vw;
+    height: 20px;
+    background-color: rgb(136, 82, 145);
+    display: flex;
+    justify-content: center; /* Horizontally center */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center; /* Center-align the content */
+    }
+
+    img[src="Untitled304_20240908211047.png"] {
+        width: 50%; /* Full width image on small screens */
+        margin: 0 450px 50px 0; /* Add margin for spacing */
+    }
+
+    .competitions-container {
+        width: 50%; /* Adjust competition container width for smaller screens */
+    }
+
+    .text {
+        max-width: 100%; /* Full width text on small screens */
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 6vw; /* Smaller heading */
+    }
+
+    h2 {
+        font-size: 3vw; /* Smaller subtitle */
+    }
+
+    p {
+        font-size: 2vw; /* Adjust paragraph font size */
+    }
+}
+
+/* Responsive adjustments for large screens */
+@media (min-width: 1440px) {
+    #center {
+        max-width: 1200px; /* Limit max-width for readability */
+    }
+
+    h1 {
+        font-size: 100px; /* Adjust font size for large screens */
+    }
+
+    h2 {
+        font-size: 50px; /* Adjust subtitle font size */
+    }
+}
