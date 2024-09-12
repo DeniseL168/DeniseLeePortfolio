@@ -1,91 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Project</title>
-    <link rel="stylesheet" href="style.css" />
+<html>
+<head>
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand">Bootstrap Project</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Painting #1</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./painting2.html">Painting #2</a>
-              <a class="nav-link" href="./project.html">Home</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <body>
-    <div class="container">
-      <h1>Painting #1</h1>
-      <div class="row">
-        <div id="red" class="col-5">
-          <!-- Red -->
-        </div>
-        <div id="white-1" class="col-7">
-          <!-- White 1 -->
-        </div>
-      </div>
-      <div class="row">
-        <div id="white-2" class="col-5">
-          <!-- White 2 -->
-        </div>
-        <div class="col-6">
-          <div class="row">
-            <div id="white-3" class="col-12">
-              <!-- White 3 -->
-            </div>
-          </div>
-          <div class="row">
-            <div id="yellow" class="col-6">
-              <!-- Yellow -->
-            </div>
-            <div id="black" class="col-6">
-              <!-- Black -->
-            </div>
-          </div>
-        </div>
-        <div class="col-1">
-          <div class="row">
-            <div id="blue" class="col-12">
-              <!-- Blue -->
-            </div>
-          </div>
-          <div class="row">
-            <div id="white-4" class="col-12">
-              <!-- White 4 -->
-            </div>
-          </div>
-        </div>
-      </div>
+    <link type="text/css" rel="stylesheet" href="indexx.css">
+    <title>Denise's Portfolio Website</title>
+</head>
+<body>
+    <div id="border">
+        <a href="indexx.html"><button>Home</button></a>
+        <a href="abtme.html"><button>About Me</button></a>
+        <a href="project.html"><button>Projects</button></a>
+        <a href="contact.html"><button>Contact</button></a>
     </div>
-  </body>
+    <div id="container">
+        <div id="center">
+            <div class="centered-text">
+                <div class="content">
+                    <img src="Untitled304_20240908211047.png" alt="Profile Image">
+                    <div class="text">
+                        <h1>Denise Lee</h1>
+                        <div class="p2">
+                            <p2>Hi! My name is Denise Lee, and I am currently a sophomore in South Hills High School. I plan on pursuing a career in the Medical Field with a pre-major in Computer Engineering. I am a well-rounded leader who loves staying productive. My goal in life is to succeed at everything I do. My greatest strength is my ambition. I work hard to be the best and I thrive to gain whatever I set my mind on.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/denise.n.lee/"><img src="instagramicon.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@deniselee168"><img src="youtubeicon.png" alt="YouTube"></a>
+                <a href="https://discordapp.com/users/835338126334623805"><img src="discordicon.png" alt="Discord"></a>
+                <a href="https://open.spotify.com/user/fy0ss9fzubl9gk3bwrbjvjwtf?si=21cd5294ee6d4503&nd=1&dlsi=7073524ca17947dd"><img src="spotifyicon.png" alt="Spotify"></a>
+                <a href="mailto:denisedebloxer@gmail.com"><img src="mailicon.png" alt="Email"></a>
+            
+                <!-- New container starts here -->
+                <div class="competitions-wrapper">
+                    <div class="competitions-container">
+                        <div class="competitions-header">
+                            <img src="competitions.png" alt="Trophy Icon" class="trophy-icon">
+                            <h3>Accomplishments</h3>
+                        </div>
+                        <p> Taekwondo: </p>
+                        <div class="competition-item">
+                            <img src="open.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Las Vegas Open International Taekwondo Championship</p>
+                                <p class="competition-detail">Gold Poomsae, Bronze Sparring - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="itf.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">International Taekwondo Festival</p>
+                                <p class="competition-detail">Silver Poomase, Bronze Sparring - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="aau.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">AAU Taekwondo Arizona State Championship</p>
+                                <p class="competition-detail">Gold Poomase, Silver Sparring - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="usatkd.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">USA Taekwondo Nevada Championship</p>
+                                <p class="competition-detail">Gold Poomase - 2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="itf.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">International Taekwondo Festival</p>
+                                <p class="competition-detail">Gold Poomase - 2024</p>
+                            </div>
+                        </div>
+                        <p> Dance: </p>
+                        <div class="competition-item">
+                            <img src="sharp.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Universal Studios SHARP International Championships </p>
+                                <p class="competition-detail">3X First Place, State Champions - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="kar.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">KAR Dance Competition Tour</p>
+                                <p class="competition-detail">Elite Top First, High Point Award, Title First RunnerUp  - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="nexstar.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">NEXSTAR Dance Competition Tour</p>
+                                <p class="competition-detail">High, Gold, Judges Choice - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="kar2.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">KAR Nationals Dance Competition Tour</p>
+                                <p class="competition-detail">2x Top First - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="kar.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">KAR Dance Competition Tour</p>
+                                <p class="competition-detail">2x Elite Top First, High Point Award, Title First RunnerUp  - 2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="tia.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Turn It Around Dance Competition Tour</p>
+                                <p class="competition-detail">1st Overall, 3rd Overall, Title First RunnerUp, Judge's Choice  - 2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="sharp.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Knotts Berry Farm SHARP International Championships </p>
+                                <p class="competition-detail">5X First Place, State Champions - 2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="nexstar.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">NEXSTAR Dance Competition Tour</p>
+                                <p class="competition-detail">Platinum, 2x 1st Place Champion - 2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="revolution.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Revolution Talent Competition </p>
+                                <p class="competition-detail">2x Platinum, 2x 1st Place Champion, High Score Champion, Judges Choice - 2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="kar.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">KAR Dance Competition Tour</p>
+                                <p class="competition-detail">2x Elite Top First, Title First RunnerUp  - 2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="kar2.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">KAR Nationals Dance Competition Tour</p>
+                                <p class="competition-detail">2x Elite Top First, Ms. Teen Dance America, National Title Runner-up - 2024</p>
+                            </div>
+                        </div>
+                    
+                        <div class="competition-item">
+                            <img src="revolution.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Revolution Nationals Dance Competition Tour</p>
+                                <p class="competition-detail">2x Platinum, Costume Champion - 2024</p>
+                            </div>
+                        </div>
+                        <p> CyberSecurity: </p>
+                        <div class="competition-item">
+                            <img src="ncl.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">NCL CyberSecurity Competition </p>
+                                <p class="competition-detail">Team Rank 484/3926, Individual Rank 2091/6679 - 2022</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="cyberbots.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Ignite CS Programming Expo</p>
+                                <p class="competition-detail">3rd Place - 2022</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="cyberpatriot.jpg" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">CyberPatriot XVI </p>
+                                <p class="competition-detail">2nd Place Siver Tier Award - 2022</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="vex.webp" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">VEX Robotics Competitions</p>
+                                <p class="competition-detail">VEX Robotics Captain of 2 years 2022-2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            
+                            <img src="acsl.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">American Computer Science League (ACSL)</p>
+                                <p class="competition-detail">2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="ncl.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">NCL CyberSecurity Competition </p>
+                                <p class="competition-detail">Team Rank 635/4672, Individual Rank 2247/7934 - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="cyberbots.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Ignite CS Programming Expo</p>
+                                <p class="competition-detail">Honorable Mention - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="cyberpatriot.jpg" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">CyberPatriot XVI </p>
+                                <p class="competition-detail">1st Place Semifinals Siver Tier Award - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="schloar.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">National Cyber Scholarship</p>
+                                <p class="competition-detail">2023</p>
+                            </div>
+                        </div> 
+                        <p> Other: </p>
+                        <div class="competition-item">
+                            <img src="president.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">President's Volunteer Service Award </p>
+                                <p class="competition-detail">Gold - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="Keyclub.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">D35E Key Club Member of the Year</p>
+                                <p class="competition-detail">2023-2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="KeyClub.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Key Club Member Recognition Program </p>
+                                <p class="competition-detail">Bronze: 150+ hours - 2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="president.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">President's Volunteer Service Award </p>
+                                <p class="competition-detail">Gold - 2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            
+                            <img src="huskies.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">South Hills High School Girls Basketball Varisty Letter</p>
+                                <p class="competition-detail">2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="huskies.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">South Hills High School Girls JV Basketball Coach's Award </p>
+                                <p class="competition-detail">2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="competitions-container">
+                        <div class="competitions-header">
+                            <img src="work.png" alt="Trophy Icon" class="trophy-icon">
+                            <h3>Leadership</h3>
+                        </div>
+                        <div class="competition-item">
+                            <img src="vex.webp" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">VEX Robotics Captain</p>
+                                <p class="competition-detail">2022-2023</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="deepracer.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">South Hills Autonomous Racing Program Chief of Information</p>
+                                <p class="competition-detail">2023-2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="huskies.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">South Hills Girls JV Basketball Captain</p>
+                                <p class="competition-detail">2023-2024</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="dance.jpg" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Tap Dance Captain</p>
+                                <p class="competition-detail">2024-2025</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="robotics.jpg" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">President of South Hills Robotics</p>
+                                <p class="competition-detail">2024-2027</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="dream.jpg" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">VP of DreamMakers</p>
+                                <p class="competition-detail">2024-2027</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="olympiad.jpg" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">VP of South Hills Olympiad</p>
+                                <p class="competition-detail">2024-2027</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="cyberbots.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Robotics/Coding Tutor</p>
+                                <p class="competition-detail">2022-2027</p>
+                            </div>
+                        </div>
+                        <div class="competition-item">
+                            <img src="cyberbots.png" alt="Event Icon" class="competition-icon">
+                            <div>
+                                <p class="competition-title">Seeking Science Magazine Editor </p>
+                                <p class="competition-detail">2022-2027</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Wavy border moved after the container -->
+    <svg id="wavy-border" viewBox="0 0 500 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 44C49.5 20 98 0 147 20C195.5 40 244 44 293 44C342 44 391 20 440 20C489 20 538 40 587 20C635.5 0 684 20 733 20C782.5 20 831 40 880 20C928.5 0 977 20 1000 25V100H0V44Z" fill="rgb(136, 82, 145)" />
+    </svg>
+    <div id="border2"></div>
+</body>
 </html>
